@@ -1,0 +1,11 @@
+{
+    
+    "magma_executable": "/home/brouwer2/sources/magma_1.10/magma",
+    "metrics" : "/projects/0/vusr0455/FUMA_process_scRNA",
+    "scrnas":[
+   "ID"
+    ],
+    "input": "/gpfs/work5/0/vusr0480/Preprocessing_scRNA/data",
+    
+    "scriptdir":"/projects/0/vusr0455/FUMA_process_scRNA/scripts"
+}

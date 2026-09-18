@@ -1,0 +1,20 @@
+{
+    
+    "magma_executable": "/home/brouwer2/sources/magma_1.10/magma",
+    "metrics" : "/projects/0/vusr0455/FUMA_process_scRNA",
+    "scrnas":[
+   "3_Gabitto_MTG_Human_2023",
+   "4_TorresFlores_Cerebellum_Human",
+   "5_Jakel_WhiteMatter_Human_2019",
+   "7_Siletti_CerebralCortex.PrCG.M1C_Human_2022",
+   ...
+   "554_Linnarsson_Prenatal_Meninx",
+   "555_Linnarsson_Prenatal_BrainMeninx",
+   "556_Linnarsson_Prenatal_ForebrainMeninges",
+   "557_Yang_Human_Adult_DLPFC",
+   "558_Lee_Human_2024_Adult_DLPFC_RADC_Cohort"	    
+   ],
+    "input": "/gpfs/work5/0/vusr0480/Preprocessing_scRNA/data",
+    
+    "scriptdir":"/projects/0/vusr0455/FUMA_process_scRNA/scripts"
+}
