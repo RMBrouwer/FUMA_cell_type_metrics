@@ -18,6 +18,14 @@ We assume that the datafiles are in the following format (see also https://githu
 - adata.obs contains a column describing the clustering, potentially at different levels, named "cell_type_level_1", "cell_type_level_2", etc.
 - adata.obs contains a column per cell type label, that describes whether a cell should be in/excluded at that level (potentially different at different levels)
 - adata.var has ENSG gene names as an index - genes without corresponding ensemble gene ID should be filtered out
+
+We assume that each dataset has at least 3 clusters, with 20 cells each. In the pipeline, smaller clusters will be filtered out, which could lead to errors if the remaining number of clusters is too small. To check whether some of the datafiles need to be excluded, you can run:
+
+```
+snakemake -s filter_datasets.smk -j 1 --configfile configfile_metrics_FUMA.json
+```
+
+Output will be a text file containing the IDs that should be removed based on this criterion: excluded_datasets_no_clusters.txt
   
 ----
 
