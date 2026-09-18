@@ -46,3 +46,18 @@ snakemake -s create_metrics.smk --cores 10 --rerun-triggers mtime --resources me
 done < dataset_ids_input.txt
 ```
 
+---- 
+
+# Output
+
+Files to use as input for the MAGMA gene-property analyses: 
+```
+fuma/${ID}/${level}/${ID}.${level}_means_cell_log_counts_pM.tsv
+cellex/${ID}/${level}/${ID}.${level}.esmu_fmt.tsv
+```
+Files to use as input for the MAGMA gene-set analyses:
+```
+ewce/${ID}/${level}/${ID}.${level}_spec_ewce_top10.txt
+cepo/${ID}/${level}/${ID}.${level}_cepo_top10.txt
+```
+----
