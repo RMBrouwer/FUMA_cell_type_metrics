@@ -2,6 +2,7 @@
 Rachel Brouwer - September 18, 2026
 
 This repository contains the documentation and scripts to compute four different metrics for MAGMA-based GWAS-to-cell-type analysis, as implemented in the FUMA platform available at fuma.ctglab.nl.
+Note: this repository is meant as internal documentation and likely will not run directly on other systems. 
 
 ----
 
@@ -16,7 +17,7 @@ We assume that the datafiles are in the following format (see also https://githu
 - h5ad annotated data file
 - adata.X is a matrix indexed by obs x var in which var is the gene and obs is the cell
 - adata.obs contains a column describing the clustering, potentially at different levels, named "cell_type_level_1", "cell_type_level_2", etc.
-- adata.obs contains a column per cell type label, that describes whether a cell should be in/excluded at that level (potentially different at different levels)
+- adata.obs contains a column per cell type label, that describes whether a cell should be in/excluded at that level (potentially different at different levels), named "keep_level_1", "keep_level_2", etc.
 - adata.var has ENSG gene names as an index - genes without corresponding ensemble gene ID should be filtered out
 
 We assume that each dataset has at least 3 clusters, with 20 cells each. In the pipeline, smaller clusters will be filtered out, which could lead to errors if the remaining number of clusters is too small. To check whether some of the datafiles need to be excluded, you can run:
