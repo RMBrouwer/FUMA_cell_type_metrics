@@ -16,6 +16,7 @@ We assume that the datafiles are in the following format (see also https://githu
 
 - h5ad annotated data file
 - adata.X is a matrix indexed by obs x var in which var is the gene and obs is the cell
+- adata.X has raw counts - normalisation and log-tranforms are done within the subsequent steps
 - adata.obs contains a column describing the clustering, potentially at different levels, named "cell_type_level_1", "cell_type_level_2", etc.
 - adata.obs contains a column per cell type label, that describes whether a cell should be in/excluded at that level (potentially different at different levels), named "keep_level_1", "keep_level_2", etc.
 - adata.var has ENSG gene names as an index - genes without corresponding ensemble gene ID should be filtered out
